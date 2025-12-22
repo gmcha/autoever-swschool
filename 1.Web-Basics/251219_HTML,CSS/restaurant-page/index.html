@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛있는 집 - 한식당</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <header>
+      <h1>맛있는 집</h1>
+      <p>정성이 담긴 한식 레스토랑</p>
+
+      <nav>
+        <a href="#about">소개</a>
+        <a href="#menu">메뉴</a>
+        <a href="#reservation">예약</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>레스토랑 소개</h2>
+        <p>1995년부터 전통 한식을 고집해온 <strong>맛있는 집</strong>입니다.</p>
+        <p>신선한 재료와 정성으로 만든 음식을 제공합니다.</p>
+
+        <h3>영업시간</h3>
+        <ul>
+          <li>평일: 11:00 - 21:00</li>
+          <li>주말: 11:00 - 22:00</li>
+          <li>매주 월요일 휴무</li>
+        </ul>
+      </section>
+
+      <section id="menu">
+        <h2>메뉴</h2>
+
+        <h3>메인 요리</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>메뉴명</th>
+              <th>설명</th>
+              <th>가격</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>불고기 정식</td>
+              <td>부드러운 소고기 불고기와 밑반찬</td>
+              <td>15,000원</td>
+            </tr>
+            <tr>
+              <td>김치찌개</td>
+              <td>직접 담근 김치로 끓인 얼큰한 찌개</td>
+              <td>9,000원</td>
+            </tr>
+            <tr>
+              <td>된장찌개</td>
+              <td>구수한 된장찌개와 밥</td>
+              <td>9,000원</td>
+            </tr>
+            <tr>
+              <td>비빔밥</td>
+              <td>신선한 나물과 고추장이 어우러진 비빔밥</td>
+              <td>11,000원</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>사이드 메뉴</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>메뉴명</th>
+              <th>가격</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>계란말이</td>
+              <td>5,000원</td>
+            </tr>
+            <tr>
+              <td>김치전</td>
+              <td>8,000원</td>
+            </tr>
+            <tr>
+              <td>공기밥</td>
+              <td>1,000원</td>
+            </tr>
+            <tr>
+              <td>물</td>
+              <td>0원</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="reservation">
+        <h2>예약하기</h2>
+        <p>방문 예약은 전화 또는 아래 양식으로 신청해주세요.</p>
+
+        <form>
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" required />
+          <br /><br />
+
+          <label for="phone">전화번호:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="010-1234-5678"
+            required
+          />
+          <br /><br />
+
+          <label for="date">예약 날짜:</label>
+          <input type="date" id="date" name="date" required />
+          <br /><br />
+
+          <label for="time">예약 시간:</label>
+          <input type="time" id="time" name="time" required />
+          <br /><br />
+
+          <label for="people">인원:</label>
+          <select name="people" id="people" required>
+            <option value="">선택하세요</option>
+            <option value="1">1명</option>
+            <option value="2">2명</option>
+            <option value="3">3명</option>
+            <option value="4">4명</option>
+            <option value="5">5명 이상</option>
+          </select>
+          <br /><br />
+
+          <label for="requests">요청사항:</label><br />
+          <textarea
+            name="requests"
+            id="requests"
+            rows="4"
+            cols="50"
+            placeholder="특별한 요청사항이 있으시면 적어주세요"
+          ></textarea>
+          <br /><br />
+
+          <label for="children-chair">어린이 의자 필요 여부:</label>
+          <input type="radio" name="children-chair" value="yes" /> 예
+          <input type="radio" name="children-chair" value="no" /> 아니오
+          <br /><br />
+
+          <label for="pets">애견 동반 여부:</label>
+          <input type="radio" name="pets" value="yes" /> 예
+          <input type="radio" name="pets" value="no" /> 아니오 <br /><br />
+
+          <input type="submit" value="예약 신청" />
+          <input type="reset" value="다시 작성" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>찾아오시는 길</h3>
+      <p>주소: 서울시 강남구 맛있는로 123</p>
+      <p>전화: 02-1234-5678</p>
+      <p>이메일: info@delicious.com</p>
+
+      <p>&copy; 2024 맛있는 집. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
